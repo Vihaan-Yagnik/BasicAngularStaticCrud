@@ -1,0 +1,12 @@
+<div class="box-container">
+    <div class="box box1" *ngFor="let s of stu">
+      <div class="border"></div>
+      <img [src]="s.avatar">
+      <div class="caption">
+        <div class="content">
+          <span>{{s.name}}</span>
+          <small>desiger</small>
+        </div>
+        <div class="fab-btn"></div>
+      </div>
+    </div>

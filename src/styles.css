@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+/* theme
+red sand:- dc2f02
+sand :- e85d04
+*/
+
+
+:root {
+    --color1: #a2d2ff;
+    --color2: #bde0fe;
+  }
+
+.ctheme{
+    background-color: var(--color1) !important;
+    color: black;
+}
+
+.stheme{
+  background-color: var(--color2) !important;
+  color: black;
+}
+
+body{
+  background-image: "https://giphy.com/embed/ozNvZioZuhQZ9YmxvX/video";
+}
+
+.gradient {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

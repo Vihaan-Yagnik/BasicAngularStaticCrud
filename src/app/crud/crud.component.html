@@ -1,0 +1,38 @@
+<body style="background-color: transparent;"> 
+    <div class="border" style="background-color: transparent;">
+        <div class="back">
+        <h1>enter info : </h1>
+        <input type="text" [(ngModel)]="myName"/>
+        <button *ngIf="upId==-1" (click)="addstudent()" class="btn btn-success mx-2">add</button>
+        <button *ngIf="upId>-1" (click)="editstudent()" class="btn btn-success mx-2">edit</button>
+        <br>
+        <br>
+    </div>
+
+        <div class="card-group">
+            <div class="col-4" *ngFor="let item of dum ; let i=index">
+            <div class="card">
+                <div class="col">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item | titlecase}}</h5>
+                        <button (click)="set(i)" class="btn btn-primary mx-2">edit</button>
+                        <button (click)="del(i)" class="btn btn-danger">delete</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!--*ngFor="let item of dum ; let i=index"
+     <div class="col">
+    {{i}} - {{item}}
+</div>
+<div class="col">
+    <button (click)="set(i)" class="btn btn-primary">edit</button>
+</div>
+<div class="col">
+    <button (click)="del(i)">delete</button>
+</div> -->
